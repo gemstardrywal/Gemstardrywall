@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>GemStarDrywall</title>
+    <link rel="stylesheet" href="GemStar.css">
+    <script src="carouse.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <script>
+        function removeBrTagsOnMobile() {
+            if (window.innerWidth <= 1280) {
+                const aboutUsText = document.querySelector('.about-us-text');
+                if (aboutUsText) {
+                    aboutUsText.innerHTML = aboutUsText.innerHTML.replace(/<br\s*\/?>/gi, ' ');
+                }
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', removeBrTagsOnMobile);
+        window.addEventListener('resize', removeBrTagsOnMobile);
+    </script>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Gemstar.png" alt="Logo">
+            </div>
+            <div class="hamburger" id="hamburger-menu">
+                &#9776; <!-- Unicode character for hamburger menu icon -->
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+
+    <div class="Home" id="home">
+        <div class="text-content">
+            <h1>Professional<br>Drywall & Taping</h1>
+            <h2>With over 25 years of experience, we offer affordable <br> pricing and ensure all projects are completed on time and<br>within budget.</h2>
+            <a href="#contacts"><button class="cn">Get A Quote</button></a>
+        </div>
+    
+        <div class="image1">
+            <img src="Stockphotohome.jpg" alt="image1">
+        </div>
+    </div>
+
+    <div class="Services" id="services">
+           
+        <div class="Servicestext">
+            <h1>Services</h1>
+        </div>
+    
+        <div class="Servicegallary">
+            <ul>
+                <li>
+                    <div class="service-item">
+                        <img src="S1.jpg" alt="S1">
+                        <p>Popcorn Ceiling Removal</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-item">
+                        <img src="S2jpg.jpg" alt="S2">
+                        <p>Smooth Ceilings</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-item">
+                        <img src="S3.jpg" alt="S3">
+                        <p>Basements</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-item">
+                        <img src="S4.jpg" alt="S4">
+                        <p>Reno's & Additions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-item">
+                        <img src="S5.jpg" alt="S5">
+                        <p>Garages</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-item">
+                        <img src="s6.webp" alt="S6">
+                        <p>Patches</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="AboutUS" id="aboutus">
+        <div class="AUT">
+            <p>About Us</p>
+        </div>
+    
+        <div class="about-us-content">
+            <!-- Left Column: Images and Quote Button -->
+            <div class="about-us-left">
+                <div class="about-us-images">
+                    <div class="left-images">
+                        <img src="Abt1.jpg" alt="Image 1">
+                        <img src="Abt2.jpg" alt="Image 2">
+                    </div>
+                    <div class="right-image">
+                        <img src="Abt3.jpg" alt="Image 3">
+                    </div>
+                </div>
+                <a href="#contacts"><button class="quote-button">Get A Quote</button></a>
+            </div>
+    
+            <!-- Right Column: Text -->
+            <div class="about-us-text">
+                <p>GemStar Drywall is your go-to choice for drywall and taping services in Barrie, Ontario. As a locally-owned and operated business, we uphold strong core values and pride ourselves on delivering excellence. Our skilled team ensures each project is completed to the highest standard with meticulous light checking and expert craftsmanship. With a commitment to quality and affordability, GemStar Drywall transforms your spaces with precision and care. Trust us to bring your vision to life with professionalism and dedication.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="Projects" id="projects">
+        
+        <div class="PT">
+            <h1>Our Projects</h1>
+        </div>
+    
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="IMG_5217.jpg" alt="Image 1"> 
+                <img src="IMG_2696.jpg" alt="Image 2"> 
+                <img src="2398.jpg" alt="Image 3"> 
+                <img src="916.jpg" alt="Image 4"> 
+                <img src="607.jpg" alt="Image 5"> 
+                <img src="159.jpg" alt="Image 6">  
+            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <div class="Contacts" id="contacts">
+            
+        <div class="CT">
+            <h1>Get In Touch!</h1>
+        </div>
+
+        <div class="C1">
+            
+            <div class="email">
+                <h2>Email: <span class="E1">Gemstardrywal@gmail.com</span></h2>
+            </div>
+
+            <div class="Cel">
+                <h2>Cell: <span class="Cells">(705)-896-1970</span></h2>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100087240501250" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100087240501250" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100087240501250" target="_blank">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </div>
+
+            <div class="C1Photo">
+                <img src="silvia-brazzoduro-YSxcf6C_SEg-unsplash.jpg" alt="image of helmets">
+            </div>
+        </div>
+
+        <div class="C2">
+            <form action="https://formspree.io/f/xqadekqj" method="POST" class="form">
+                <div class="logo2">
+                    <img src="Gemstar.png" alt="CompanyLogo">
+                </div>
+        
+                <!-- Form Fields -->
+                <input type="text" name="name" placeholder="Enter your full name" required>
+                <input type="email" name="email" placeholder="Enter your email here" required>
+                <input type="tel" name="phone" placeholder="Enter your phone number here">
+                <textarea name="message" placeholder="Enter your message here" required></textarea>
+        
+                <!-- Submit Button -->
+                <button type="submit" class="btt3">Get A Quote</button>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
