@@ -240,7 +240,8 @@ ul li a:hover {
 
 .left-images img {
     width: 278px;
-    height: auto; /* Maintain aspect ratio */
+    height: 190px;
+    object-fit: cover;
 }
 
 .right-image {
@@ -250,10 +251,9 @@ ul li a:hover {
 
 .right-image img {
     width: 278px;
-    height: 390px; /* Combine height of two left images with gap */
+    height: 390px;
     object-fit: cover;
 }
-
 .Image4{
     display: none;
 }
@@ -1082,4 +1082,5 @@ ul li a:hover {
         max-width: 220px; /* Limit width */
         margin-bottom: 20px; /* Margin below button */
     }
+
 }
